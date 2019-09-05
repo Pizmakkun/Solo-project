@@ -2,20 +2,12 @@
 	height: 100%;
 	width: 185px;
 	position: fixed;
+	top: 0;
 	padding: 0;
 	background-color: $sidebar-color;
 }
-.menu {
-
-}
 .sidebar-nav {
 	margin: 60px 0 0 0;
-	border-color: blue;
-	border-style: dotted;
-	padding: 0;
-	li {
-	list-style-type: none;
-	}
 }
 .chat {
 

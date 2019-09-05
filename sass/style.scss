@@ -2,9 +2,25 @@
 @import "mixins";
 @import "normalize";
 @import "layout";
-@import "components/sidebar_buttons";
 @import "sections/sidebar";
 @import "sections/topbar";
+@import "components/sidebar_buttons";
+@import "components/topbar_button";
+
+body {
+	background-color: $background-color;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+ul {
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+}
 
 /**
 Later
