@@ -9,8 +9,6 @@
 
 body {
 	background-color: $background-color;
-	max-width: 1280px;
-	margin: 0 auto;
 }
 ul {
 	font-size: 14px;
@@ -20,6 +18,7 @@ ul {
 }
 a {
 	text-decoration: none;
+	color: inherit;
 }
 
 /**

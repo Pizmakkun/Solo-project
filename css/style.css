@@ -466,9 +466,9 @@ template {
 }
 
 .sidebar {
+  position: fixed;
   height: 100%;
   width: 185px;
-  position: fixed;
   top: 0;
   padding: 0;
   background-color: #191919;
@@ -479,17 +479,19 @@ template {
 }
 
 .topbar {
+  position: fixed;
+  margin-left: 185px;
   height: 60px;
-  width: 100%;
+  width: calc(100% - 185px);
   background-color: #FFFFFF;
   border-bottom: solid 1px #E3E3E3;
 }
 
 .sidebar-button {
+  height: 40px;
+  color: #BABABA;
   font-family: sans-serif;
   font-size: 1.2em;
-  color: #FFFFFF;
-  height: 40px;
 }
 
 .topbar_button {
@@ -505,10 +507,14 @@ template {
   color: #979797;
 }
 
+li a {
+  height: inherit;
+  display: block;
+  border: blue solid;
+}
+
 body {
   background-color: #F5F5F2;
-  max-width: 1280px;
-  margin: 0 auto;
 }
 
 ul {
@@ -520,6 +526,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 /**

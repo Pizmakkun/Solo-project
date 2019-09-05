@@ -8,5 +8,10 @@
 	font-family: sans-serif; 
 	font-size: 1.2em;
 	border-left: solid 1px #E3E3E3;
-	color: #979797;
+	color: $topbar-font-color;
+}
+li a {
+	height: inherit;
+	display: block;
+	border: blue solid;
 }
