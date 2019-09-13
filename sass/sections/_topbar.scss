@@ -1,8 +1,8 @@
 .topbar {
 	position: fixed;
-	margin-left: 185px;
+	float: right;
 	height: 60px;
-	width: calc(100% - 185px);
 	background-color: #FFFFFF;
 	border-bottom: solid 1px #E3E3E3;
+	padding-top: 0;
 }

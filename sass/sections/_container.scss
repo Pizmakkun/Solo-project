@@ -1,0 +1,25 @@
+.container {
+	background-color: white;
+	margin: 1em;
+	box-shadow: 0 0 8px 1px $grey2;
+	overflow: hidden;
+	& header {
+		display: flex;
+		border-bottom: 1px solid $grey2;
+		padding: 1em;
+		text-transform: uppercase;
+		color: $grey4;
+	}
+	& p {
+		margin: 0;
+		width: 100%;
+		padding: 1em 10%;
+	}
+	& .btm-brd-section {
+	border-bottom: 1px solid $grey2;
+	padding: 1em;
+	}
+}
+.brd-line {
+	border-bottom: 1px solid $grey2;
+}

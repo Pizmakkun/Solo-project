@@ -3,12 +3,6 @@
     text-align: center;
     font-family: sans-serif;
 }
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-   	background-color: green;
-}
 .row::before, 
 .row::after {
     content: "";
@@ -16,10 +10,9 @@
     clear: both;
 }
 [class*="col-"]{
-    float: left;
     min-height: 1px;
-    min-height: 100px;
-  padding: 12px; 
+    min-height: 60px;
+    padding: 12px; 
 }
 /* Column widths */
 .col-1 {width: 8.33%;}

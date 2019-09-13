@@ -2,23 +2,31 @@
 @import "mixins";
 @import "normalize";
 @import "layout";
-@import "sections/sidebar";
 @import "sections/topbar";
-@import "components/sidebar_buttons";
-@import "components/topbar_button";
+@import "sections/sidebar";
+@import "sections/container";
+@import "components/buttons";
+@import "components/linksetc";
 
-body {
+main {
+	position: absolute;
+	height: calc(100% - 60px);
+	top: 60px;
 	background-color: $background-color;
 }
 ul {
-	font-size: 14px;
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
 }
+li a {
+	display: block;
+}
 a {
 	text-decoration: none;
 	color: inherit;
+	height: inherit;
+	width: inherit;
 }
 
 /**
