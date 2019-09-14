@@ -2,7 +2,7 @@
 	position: relative;
 	float: left;
 	transition: 0.3s;
-	border-top: 1px solid $grey2;
+	border-bottom: 1px solid $grey2;
 	height: 3em;
 	padding: 0;
 	text-align: center;
@@ -17,5 +17,16 @@
 	}
 	&:hover {
 		background-color: $line-hover;
+	}
+	& .link {
+	font-weight: normal;
+	color: $blue;
+	}
+}
+.list-digit {
+	@extend .link-field;
+	border: 1px solid red;
+	&:hover {
+		background-color: inherit;
 	}
 }
