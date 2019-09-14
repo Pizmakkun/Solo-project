@@ -1,19 +1,16 @@
 .link-field {
-	position: relative;
 	float: left;
 	transition: 0.3s;
 	border-bottom: 1px solid $grey2;
-	height: 3em;
 	padding: 0;
 	text-align: center;
 	font-weight: bold;
 	& li {
 		display: inline-block;
-		padding: 1em 0;
 		margin: 0;
 		text-align: left;
 		color: $grey4;
-		font-size: 1.2em;
+		font-size: 1em;
 	}
 	&:hover {
 		background-color: $line-hover;
@@ -24,9 +21,18 @@
 	}
 }
 .list-digit {
-	@extend .link-field;
-	border: 1px solid red;
-	&:hover {
-		background-color: inherit;
+	padding-bottom: 0.3em;
+	text-align: left;
+	border-bottom: 1px solid $grey2;
+	color: $grey4;
+	font-size: 1em;
+	font-weight: bold;
+	& span {
+		float: right;
 	}
+}
+.stats {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
 }

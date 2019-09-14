@@ -9,9 +9,7 @@
 @import "components/linksetc";
 
 main {
-	position: absolute;
-	height: calc(100% - 60px);
-	top: 60px;
+	margin-top: 60px;
 	background-color: $background-color;
 }
 ul {
