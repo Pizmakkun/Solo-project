@@ -11,6 +11,7 @@
 		text-align: left;
 		color: $grey4;
 		font-size: 1em;
+		padding-left: 0;
 	}
 	&:hover {
 		background-color: $line-hover;
@@ -21,7 +22,7 @@
 	}
 }
 .list-digit {
-	padding-bottom: 0.3em;
+	padding: 0 0 0.3em 0;
 	text-align: left;
 	border-bottom: 1px solid $grey2;
 	color: $grey4;
@@ -32,7 +33,6 @@
 	}
 }
 .stats {
-	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
 }
