@@ -36,6 +36,9 @@ button {
 	box-shadow: 0 0 1px 1px;
 	color: #FFFFFF;
 	transition: 0.3s;
+	&:focus {
+		outline: none !important;
+	}
 	&.btn-orange {
 		background-color: $dark-orange;
 		&:hover {
@@ -51,7 +54,6 @@ button {
 		}
 	}
 	&.btn-charts {
-		border: 1px solid red;
 		background-color: #FFFFFF;
 		color: $grey4;
 		box-shadow: none;
