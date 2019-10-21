@@ -351,10 +351,6 @@ main {
   background-color: #F5F5F2;
 }
 
-.show {
-  visibility: visible;
-}
-
 .flex-container {
   display: -webkit-flex;
   display: flex;
@@ -695,6 +691,10 @@ button.btn-charts:active {
 .stats {
   flex-flow: row wrap;
   justify-content: space-between;
+}
+
+.show {
+  display: block;
 }
 
 ul {

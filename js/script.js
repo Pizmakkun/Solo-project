@@ -1,12 +1,11 @@
 'use strict'
 
-function toggleMenu(visible) {
-document.querySelector('.menu').classList.toggle('show', visible)
-}
-window.onload=function() {
+function toggleMenu() {
+document.querySelector('.menu').classList.toggle('show')
+};
+
 document.querySelector('.hamburger').addEventListener('click', function(e){
 	e.preventDefault();
-	toggleMenu()
-	alert(1)
+	toggleMenu();
 });
-}
+
