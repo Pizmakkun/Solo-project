@@ -18,6 +18,13 @@
 	font-size: 1.5em;
 	overflow: hidden;
 }
+.hamburger {
+		fill: $grey3;
+		border: 1px solid red;
+		&:hover {
+			cursor: pointer;
+		}
+}
 .menu {
 	display: none;
 	margin: 0;

@@ -352,7 +352,7 @@ main {
 }
 
 .show {
-  display: visible;
+  visibility: visible;
 }
 
 .flex-container {
@@ -513,6 +513,15 @@ h3 {
   overflow: hidden;
 }
 
+.hamburger {
+  fill: #BABABA;
+  border: 1px solid red;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
 .menu {
   display: none;
   margin: 0;
@@ -589,15 +598,6 @@ h3 {
   background-color: #282828;
   border-left: #F58220 solid 4px;
   color: #BABABA;
-}
-
-.hamburger {
-  fill: #BABABA;
-  border: 1px solid red;
-}
-
-.hamburger:hover {
-  cursor: pointer;
 }
 
 button {
