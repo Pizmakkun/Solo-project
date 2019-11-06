@@ -1,32 +1,28 @@
 .sidebar {
 	position: fixed;
+	left: 0;
+	display: inline-block;
 	height: 100%;
 	font-family: $brand-font;
 	top: 0;
-	padding: 0;
 	background-color: $sidebar-color;
+	padding: 0;
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
 }
 .logo {
-	display: inline-block;
 	font-family: "mansalva";
 	margin: 0;
-	height: 60px;
+	height: 50px;
 	width: 100%;
-	padding: 0.7em;
+	padding: 0.5em 12px;
 	border-bottom: 1px solid $grey4;
 	color: $grey3;
 	font-size: 1.5em;
-	overflow: hidden;
-}
-.hamburger {
-		fill: $grey3;
-		border: 1px solid red;
-		&:hover {
-			cursor: pointer;
-		}
+	overflow: visible;
 }
 .menu {
-	display: none;
 	margin: 0;
 	border-bottom: solid 1px $grey4;
 	padding: 1em 0;

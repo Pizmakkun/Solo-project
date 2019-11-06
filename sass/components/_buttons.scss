@@ -1,12 +1,33 @@
 .topbar_button {
 	display: inline-block;
-	float: right;
-	line-height: 59px;
+	background-color: inherit;
+	line-height: 49px;
 	padding: 0 20px;
 	font-size: 1.2em;
 	border-left: solid 1px #E3E3E3;
 	color: $grey4;
+	&:first-of-type {
+		padding-top: 3px;
+	}
+	@media screen and (max-width: 767px) {
+	padding: 0 10px;
+		&:last-of-type {
+			border-right: solid 1px #E3E3E3;
+		}
+	}		
 }
+.hamburger {
+		display: none;
+		fill: $grey3;
+		&:hover {
+			cursor: pointer;
+		}
+		@media screen and (max-width: 767px) {
+			display: block;
+			left: 20px;			
+		}
+}
+
 .sidebar-button {
 	display: block;
 	height: 40px;
@@ -17,6 +38,10 @@
 	& a {
 		text-align: left;
 		padding-left: 1em;
+		@media screen and (max-width: 767px) {
+		text-align: center;
+		padding-left: 0;
+		}
 	}
 	&:hover {
 		background-color: #282828;

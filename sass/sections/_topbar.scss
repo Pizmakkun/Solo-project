@@ -1,10 +1,19 @@
 .topbar {
+	justify-content: flex-end;
+	flex-flow: row wrap;
 	position: fixed;
-	float: right;
 	top: 0;
-	height: 60px;
+	left: 0;
+	right: 0;
+	height: 50px;
 	background-color: #FFFFFF;
 	border-bottom: solid 1px #E3E3E3;
 	padding-top: 0;
 	font-family: $brand-font;
+	@media screen and (max-width: 767px) {
+		font-size: 0.8em;
+		justify-content: center;
+		overflow: hidden;
+		padding: 0;
+	}		
 }
