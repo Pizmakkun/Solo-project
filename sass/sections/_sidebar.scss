@@ -26,6 +26,9 @@
 	margin: 0;
 	border-bottom: solid 1px $grey4;
 	padding: 1em 0;
+	& svg {
+		fill: $grey3;
+	}
 }
 .chat {
 
