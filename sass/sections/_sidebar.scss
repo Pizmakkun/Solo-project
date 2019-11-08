@@ -7,8 +7,10 @@
 	top: 0;
 	background-color: $sidebar-color;
 	padding: 0;
+	z-index: 999;
+	transition: .6s;
 	@media screen and (max-width: 767px) {
-		display: none;
+		transform: translate3d(-100vw, 0, 0);
 	}
 }
 .logo {

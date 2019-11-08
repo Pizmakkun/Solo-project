@@ -9,6 +9,9 @@
 	&:first-of-type {
 		padding-top: 3px;
 	}
+	&:hover {
+			cursor: pointer;
+	}
 	@media screen and (max-width: 767px) {
 	padding: 0 10px;
 		&:last-of-type {
@@ -18,16 +21,10 @@
 }
 .hamburger {
 		display: none;
-		fill: $grey3;
-		&:hover {
-			cursor: pointer;
-		}
 		@media screen and (max-width: 767px) {
-			display: block;
-			left: 20px;			
+			display: block;	
 		}
 }
-
 .sidebar-button {
 	display: block;
 	height: 40px;
@@ -90,4 +87,7 @@ button {
 			background-color: $grey1;
 		}
 	}
+}
+
+.back {
 }

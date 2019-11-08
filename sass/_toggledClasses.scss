@@ -1,3 +1,21 @@
 .show {
-	display: block;
+	transform: translate3d(0, 0, 0);
+	transition: .6s;
+}
+.dim {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: black;
+	opacity: 0;
+	z-index: 100;
+	visibility: hidden;
+	transition: .6s;
+}
+.dimmed {
+	transition: .6s;
+	visibility: visible !important;
+	opacity: 0.6 !important;
 }

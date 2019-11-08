@@ -1426,6 +1426,10 @@ h3 {
   }
 }
 
+.topbar svg {
+  fill: #979797;
+}
+
 .sidebar {
   position: fixed;
   left: 0;
@@ -1435,11 +1439,13 @@ h3 {
   top: 0;
   background-color: #191919;
   padding: 0;
+  z-index: 999;
+  transition: .6s;
 }
 
 @media screen and (max-width: 767px) {
   .sidebar {
-    display: none;
+    transform: translate3d(-100vw, 0, 0);
   }
 }
 
@@ -1521,6 +1527,10 @@ h3 {
   padding-top: 3px;
 }
 
+.topbar_button:hover {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 767px) {
   .topbar_button {
     padding: 0 10px;
@@ -1532,17 +1542,11 @@ h3 {
 
 .hamburger {
   display: none;
-  fill: #BABABA;
-}
-
-.hamburger:hover {
-  cursor: pointer;
 }
 
 @media screen and (max-width: 767px) {
   .hamburger {
     display: block;
-    left: 20px;
   }
 }
 
@@ -1671,7 +1675,27 @@ button.btn-charts:active {
 }
 
 .show {
-  display: block;
+  transform: translate3d(0, 0, 0);
+  transition: .6s;
+}
+
+.dim {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  opacity: 0;
+  z-index: 100;
+  visibility: hidden;
+  transition: .6s;
+}
+
+.dimmed {
+  transition: .6s;
+  visibility: visible !important;
+  opacity: 0.6 !important;
 }
 
 /**

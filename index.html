@@ -3,15 +3,22 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Just do it!</title>
+	<title>Simple!</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
 </head>
 	<body id="home">
 		<ul class="topbar flex-container col-sm-12 col-md-12 col-lg-12 col-xl-12">
 			<li class="topbar_button hamburger" id="hamburger">
-				<svg width="17" height="17" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg></li>
-			<li class="topbar_button"><a href=#>back</a></li>
+				<svg width="17" height="17" viewBox="0 0 24 24">
+					<path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/>
+				</svg>
+			</li>
+			<li class="topbar_button back" onclick="goBack()">
+				<svg width="18" height="15">
+					<path d="M13.9,3.1l-0.7,0.7L16.3,7H3v1h13.3l-3.1,3.1l0.7,0.7l4.4-4.4L13.9,3.1z M10,14H1V1h9v3h1V0H0v15h11v-4h-1V14z"/>
+				</svg>
+			</li>
 			<li class="topbar_button"><a href=#>Leonardo Dicaprio</a></li>
 			<li class="topbar_button"><a href=#>bell</a></li>
 			<li class="topbar_button"><a href=#>$1,500.00</a></li>
@@ -57,6 +64,7 @@
 			</div>
 		</div>
 		<main class="container row col-sm-12 col-md-9 col-lg-9 col-xl-10 col-offset-md-3 col-offset-lg-3 col-offset-xl-2">
+			<div class="dim"></div>
 			<div>
 				<div class="paragraph row">
 					<header>General Statistic
@@ -96,60 +104,67 @@
 							+ add new
 						</button>
 						<div class="row">
-							<ul class="col-offset-2 col-8 link-field"><a href="">
-								<li class="col-4">Home page</li>
-								<li class="col-6 link">http://www.homepage.com</li>
-								</a>
-								<li class="col-1">icons</li>
-							</ul>
-							<ul class="col-offset-2 col-8 link-field"><a href="">
-								<li class="col-4">Currently offer</li>
-								<li class="col-6 link">http://www.currently.com</li>
-								</a>
-								<li class="col-1">icons</li>
-							</ul><ul class="col-offset-2 col-8 link-field"><a href="">
-								<li class="col-4">Blurpix</li>
-								<li class="col-6 link">http://www.blurpix.com</li>
-								</a>
-								<li class="col-1">icons</li>
-							</ul><ul class="col-offset-2 col-8 link-field"><a href="">
-								<li class="col-4">Your Site</li>
-								<li class="col-6 link">http://www.yoursite.com</li>
-								</a>
-								<li class="col-1">icons</li>
-							</ul><ul class="col-offset-2 col-8 link-field"><a href="http://www.google.com/">
-								<li class="col-4">Google</li>
-								<li class="col-6 link">http://www.google.com</li>
-								</a>
-								<li class="col-1">icons</li>
-							</ul><ul class="col-offset-2 col-8 link-field"><a href="">
-								<li class="col-4">Facebook</li>
-								<li class="col-6 link">http://www.facebook.com</li>
-								</a>
-								<li class="col-1">icons</li>
-							</ul><ul class="col-offset-2 col-8 link-field"><a href="">
-								<li class="col-4">Dashboard</li>
-								<li class="col-6 link">http://www.dashboard.com</li>
-								</a>
-								<li class="col-1">icons</li>
-							</ul><ul class="col-offset-2 col-8 link-field"><a href="">
-								<li class="col-4">Blurax</li>
-								<li class="col-6 link">http://www.blurax.com</li>
-								</a>
-								<li class="col-1">icons</li>
-							</ul><ul class="col-offset-2 col-8 link-field"><a href="">
-								<li class="col-4">Piece of Wine</li>
-								<li class="col-6 link">http://www.pieceofwine.com</li>
-								</a>
-								<li class="col-1">icons</li>
-							</ul>
-							<ul class="col-offset-2 col-8 link-field"><a href="">
-								<li class="col-4">Twitter</li>
-								<li class="col-6 link">http://www.twitter.com</li>
-								</a>
-								<li class="col-1">icons</li>
-							</ul>
-						</div>
+						<ul class="col-offset-2 col-8 link-field"><a href="http://www.homepage.com">
+							<li class="col-4">Home page</li>
+							<li class="col-6 link">http://www.homepage.com</li>
+							</a>
+							<li class="col-1">icons</li>
+						</ul>
+						<ul class="col-offset-2 col-8 link-field"><a href="http://www.currently.com">
+							<li class="col-4">Currently offer</li>
+							<li class="col-6 link">http://www.currently.com</li>
+							</a>
+							<li class="col-1">icons</li>
+						</ul>
+						<ul class="col-offset-2 col-8 link-field"><a href="http://www.blurpix.com">
+							<li class="col-4">Blurpix</li>
+							<li class="col-6 link">http://www.blurpix.com</li>
+							</a>
+							<li class="col-1">icons</li>
+						</ul>
+						<ul class="col-offset-2 col-8 link-field"><a href="http://www.youtube.com">
+							<li class="col-4">Youtube</li>
+							<li class="col-6 link">http://www.youtube.com</li>
+							</a>
+							<li class="col-1">icons</li>
+						</ul>
+						<ul class="col-offset-2 col-8 link-field"><a href="http://www.google.com/">
+							<li class="col-4">Google</li>
+							<li class="col-6 link">http://www.google.com</li>
+							</a>
+							<li class="col-1">icons</li>
+						</ul>
+						<ul class="col-offset-2 col-8 link-field"><a href="http://www.facebook.com">
+							<li class="col-4">Facebook</li>
+							<li class="col-6 link">http://www.facebook.com</li>
+							</a>
+							<li class="col-1">icons</li>
+						</ul>
+						<ul class="col-offset-2 col-8 link-field"><a href="http://www.dashboard.com">
+							<li class="col-4">Dashboard</li>
+							<li class="col-6 link">http://www.dashboard.com</li>
+							</a>
+							<li class="col-1">icons</li>
+						</ul>
+						<ul class="col-offset-2 col-8 link-field"><a href="http://www.blurax.com">
+							<li class="col-4">Blurax</li>
+							<li class="col-6 link">http://www.blurax.com</li>
+							</a>
+							<li class="col-1">icons</li>
+						</ul>
+						<ul class="col-offset-2 col-8 link-field"><a href="http://www.pieceofwine.com">
+							<li class="col-4">Piece of Wine</li>
+							<li class="col-6 link">http://www.pieceofwine.com</li>
+							</a>
+							<li class="col-1">icons</li>
+						</ul>
+						<ul class="col-offset-2 col-8 link-field"><a href="http://www.twitter.com">
+							<li class="col-4">Twitter</li>
+							<li class="col-6 link">http://www.twitter.com</li>
+							</a>
+							<li class="col-1">icons</li>
+						</ul>
+					</div>
 					<button class="btn-orange">
 							+ add new
 					</button>	
