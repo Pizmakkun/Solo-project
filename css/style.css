@@ -1403,6 +1403,10 @@ h3 {
   color: #979797;
 }
 
+.center {
+  justify-content: center;
+}
+
 .topbar {
   justify-content: flex-end;
   flex-flow: row wrap;
@@ -1477,7 +1481,7 @@ h3 {
   margin: 1em auto;
   box-shadow: 0 0 8px 1px #E3E3E3;
   overflow: hidden;
-  padding-bottom: 1em;
+  padding: 0 0 1em 0;
 }
 
 .paragraph header {
@@ -1489,12 +1493,9 @@ h3 {
   color: #979797;
 }
 
-.paragraph .btm-brd-section {
-  border-bottom: 1px solid #E3E3E3;
-  padding: 1em;
-}
-
 .brd-line {
+  width: 100%;
+  margin: 2em 0;
   border-bottom: 1px solid #E3E3E3;
 }
 
@@ -1511,6 +1512,43 @@ h3 {
 
 .charts div {
   display: block;
+}
+
+label {
+  padding: 0.5em;
+  text-align: left;
+  margin: auto 0;
+}
+
+input[type="text"], input[type="email"], input[type="number"], input[type="password"] {
+  padding: 5px 10px;
+  color: inherit;
+  outline: #BABABA;
+  overflow: hidden;
+  width: 70%;
+  max-width: 100%;
+  margin: .5em;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.field {
+  display: flex;
+  justify-content: space-between;
+  color: #979797;
+}
+
+@media screen and (max-width: 344px) {
+  .field {
+    display: block;
+  }
 }
 
 .topbar_button {
