@@ -374,15 +374,9 @@ ul {
   list-style-type: none;
 }
 
-li a {
-  display: block;
-}
-
 a {
   text-decoration: none;
   color: inherit;
-  height: inherit;
-  width: inherit;
   padding: 0;
 }
 
@@ -1302,11 +1296,11 @@ a {
 }
 
 .col-1 {
-  width: 8.33%;
+  width: 8.33333%;
 }
 
 .col-2 {
-  width: 16.66%;
+  width: 16.66667%;
 }
 
 .col-3 {
@@ -1314,11 +1308,11 @@ a {
 }
 
 .col-4 {
-  width: 33.33%;
+  width: 33.33333%;
 }
 
 .col-5 {
-  width: 41.66%;
+  width: 41.66667%;
 }
 
 .col-6 {
@@ -1326,11 +1320,11 @@ a {
 }
 
 .col-7 {
-  width: 58.33%;
+  width: 58.33333%;
 }
 
 .col-8 {
-  width: 66.66%;
+  width: 66.66667%;
 }
 
 .col-9 {
@@ -1338,24 +1332,23 @@ a {
 }
 
 .col-10 {
-  width: 83.33%;
+  width: 83.33333%;
 }
 
 .col-11 {
-  width: 91.66%;
+  width: 91.66667%;
 }
 
 .col-12 {
   width: 100%;
 }
 
-/* Column offsets */
 .col-offset-1 {
-  margin-left: 8.33%;
+  margin-left: 8.33333%;
 }
 
 .col-offset-2 {
-  margin-left: 16.66%;
+  margin-left: 16.66667%;
 }
 
 .col-offset-3 {
@@ -1363,11 +1356,11 @@ a {
 }
 
 .col-offset-4 {
-  margin-left: 33.33%;
+  margin-left: 33.33333%;
 }
 
 .col-offset-5 {
-  margin-left: 41.66%;
+  margin-left: 41.66667%;
 }
 
 .col-offset-6 {
@@ -1375,11 +1368,11 @@ a {
 }
 
 .col-offset-7 {
-  margin-left: 58.33%;
+  margin-left: 58.33333%;
 }
 
 .col-offset-8 {
-  margin-left: 66.66%;
+  margin-left: 66.66667%;
 }
 
 .col-offset-9 {
@@ -1387,11 +1380,11 @@ a {
 }
 
 .col-offset-10 {
-  margin-left: 83.33%;
+  margin-left: 83.33333%;
 }
 
 .col-offset-11 {
-  margin-left: 91.66%;
+  margin-left: 91.66667%;
 }
 
 .col-offset-12 {
@@ -1404,6 +1397,7 @@ h3 {
 }
 
 .center {
+  display: flex;
   justify-content: center;
 }
 
@@ -1451,6 +1445,10 @@ h3 {
   .sidebar {
     transform: translate3d(-100vw, 0, 0);
   }
+}
+
+.sidebar li a {
+  display: block;
 }
 
 .logo {
@@ -1694,6 +1692,27 @@ button.btn-charts:active {
   color: #56819F;
 }
 
+@media screen and (max-width: 991px) {
+  .link-field .link {
+    display: none;
+  }
+}
+
+.link-field svg {
+  fill: #979797;
+  margin: 0 .5em;
+}
+
+.link-field a svg {
+  fill: #FFA220;
+}
+
+@media screen and (max-width: 767px) {
+  .link-field a svg {
+    display: none;
+  }
+}
+
 .list-digit {
   padding: 0 0 0.3em 0;
   text-align: left;
@@ -1710,6 +1729,10 @@ button.btn-charts:active {
 .stats {
   flex-flow: row wrap;
   justify-content: space-between;
+}
+
+.link-icons {
+  text-align: right !important;
 }
 
 .show {

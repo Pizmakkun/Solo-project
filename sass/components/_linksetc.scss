@@ -19,6 +19,19 @@
 	& .link {
 	font-weight: normal;
 	color: $blue;
+		@media screen and (max-width: 991px){
+			display: none;
+		}
+	}
+	& svg {
+		fill: $grey4;
+		margin: 0 .5em;
+	}
+	& a svg {
+		fill: $orange;
+		@media screen and (max-width: 767px) {
+			display: none;
+		}
 	}
 }
 .list-digit {
@@ -35,4 +48,7 @@
 .stats {
 	flex-flow: row wrap;
 	justify-content: space-between;
+}
+.link-icons {
+	text-align: right !important;
 }

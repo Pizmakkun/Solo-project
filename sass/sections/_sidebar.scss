@@ -12,6 +12,9 @@
 	@media screen and (max-width: 767px) {
 		transform: translate3d(-100vw, 0, 0);
 	}
+	& li a {
+    display: block;
+	}
 }
 .logo {
 	font-family: "mansalva";
@@ -33,5 +36,4 @@
 	}
 }
 .chat {
-
 }
