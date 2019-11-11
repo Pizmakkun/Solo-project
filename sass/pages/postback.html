@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="../../css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
 </head>
-	<body id="links">
+	<body id="postback">
 		<ul class="topbar flex-container col-sm-12 col-md-12 col-lg-12 col-xl-12">
 			<li class="topbar_button hamburger" id="hamburger">
 				<svg width="17" height="17" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg></li>
@@ -63,8 +63,80 @@
 			<div class="dim"></div>
 			<div class="paragraph col-sm-12">
 				<header>
-					Postback
-				</header>	
+					New postback
+				</header>
+				<form action="" method="POST">
+					<h5 class="row col-sm-12">You can insert some parameters in this postback</h5>
+					<div class="brd-line"></div>
+					<div class="row flex-container col-sm-12">
+						<div class="row col-sm-12 col-md-6">
+							<label class="col-sm-12">Signup</label>
+							<textarea class="col-sm-12" name="signup" rows="6" maxlength="500" placeholder="crm_userid=%user_id%&#10subid=%p%"></textarea>
+						</div>
+						<div class="row col-sm-12 col-md-6">
+							<label>Deposit</label>
+							<textarea class="col-sm-12"name="deposit" rows="6" maxlength="500" placeholder="crm_userid=%user_id%&#10subid=%p%"></textarea>
+						</div>
+					</div>
+					<div class="brd-line"></div>
+					<div class="row col-sm-12">
+						<div class="row col-sm-12 col-md-4">
+							<label>Postback type</label>
+							<select class="col-sm-12" name="postbackType">
+								<option value="" disabled selected>Select postback</option>
+								<option value="sts">S2S</option>
+							</select>
+						</div>
+						<div class="row col-sm-12 col-md-4">
+							<label>To countries</label>
+							<select class="col-sm-12" name="countries">
+								<option value="" disabled selected>Select country</option>
+								<optgroup label="Asia & Pacific">
+									<option value="Australia">Australia</option>
+									<option value="Indonesia">Indonesia</option>
+									<option value="Japan">Japan</option>
+									<option value="Malesia">Malesia</option>
+									<option value="New Zeeland">New Zeeland</option>
+								</optgroup>
+								<optgroup label="Africa">
+									<option value="Algeria">Algeria</option>
+									<option value="Ethiopia">Ethiopia</option>
+									<option value="Nigeria">Nigeria</option>
+									<option value="South Africa">South Africa</option>
+								</optgroup>
+							</select>
+						</div>
+						<div class="row col-sm-12 col-md-4">
+							<label>Sending options</label>
+							<select class="col-sm-12" name="sending options">
+								<option value="" selected disabled>Select sending option</option>
+								<option value="ship">By sea</option>
+								<option value="plane">By plane</option>
+								<option value="land">By land</option>
+							</select>
+						</div>
+					</div>
+					<div class="brd-line"></div>
+					<div class="row col-sm-12">
+						<div class="col-sm-12 col-md-6">
+							<h3><span id="red">NOT</span> send statuses</h3>
+							<div class="column col-sm-12">
+								<label><input type="checkbox" name="notsend" value="checkNumber"> checkNumber</label>
+								<label><input type="checkbox" name="notsend" value="noAnswer"> noAnswer</label>
+								<label><input type="checkbox" name="notsend" value="noCall"> noCall</label>
+								<label><input type="checkbox" name="notsend" value="callAgain"> callAgain</label>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-6">
+						<h3>Send after</h3>
+							<div>
+							<input class="col-sm-10" type="range" min="0" max="120" value="60" step="6" step name="send_after">
+							</div>
+						</div>
+					</div>
+					<div class="brd-line"></div>
+					<button id="pixelbtn" class="row btn-orange" type="submit">Create Pixel</button>
+				</form>
 			</div>
 		</main>
 		<script type="text/javascript" src="../../js/script.js">

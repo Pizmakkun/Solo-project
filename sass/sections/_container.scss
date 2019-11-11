@@ -5,6 +5,7 @@
 	box-shadow: 0 0 8px 1px $grey2;
 	overflow: hidden;
 	padding: 0 0 1em 0;
+	color: $grey4;
 	& header {
 		display: flex;
 		width: 100%;
@@ -16,7 +17,7 @@
 }
 .brd-line {
 	width: 100%;
-	margin: 2em 0;
+	margin: 1em 0 0 0;
 	border-bottom: 1px solid $grey2;
 }
 .charts {
@@ -31,32 +32,6 @@
 		display: block;
 	}
 }
-label {
-	padding: 0.5em;
-	text-align: left;
-	margin: auto 0;
-}
-input[type="text"],input[type="email"], input[type="number"], input[type="password"] {
-	padding: 5px 10px;
-	color: inherit;
-	outline: $grey3;
-	overflow: hidden;
-	width: 70%;
-	max-width: 100%;
-	margin: .5em;
-}
-input[type="number"] {
-	-moz-appearance:textfield;
-}
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-}
-.field {
-	display: flex;
-	justify-content: space-between;
-	color: $grey4;
-	@media screen and (max-width: 344px) {
-		display: block;
-	}
+#red {
+	color: red;
 }

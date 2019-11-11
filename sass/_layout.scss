@@ -39,23 +39,28 @@ a {
     display: -webkit-inline-flex;
     display: inline-flex;
 }
-.row {
+.column {
+    display: -webkit-flex;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
 }
-
+.row {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
 .row::before, 
 .row::after {
     content: "";
     display: table ;
     clear: both;
 }
-
 [class*="col-"]{
     min-height: 1px;
     padding: 12px; 
 }
-
 @for $i from 1 through 12 {
     .col-sm-#{$i} {
         $width: 100% / 12 * $i;
@@ -64,7 +69,6 @@ a {
         max-width: $width;
     }
 }
-
 @for $i from 1 through 12 {
     .col-md-#{$i} {
         $width: 100% / 12 * $i;
@@ -73,7 +77,6 @@ a {
         max-width: $width;
     }
 }
-
 @for $i from 1 through 12 {
     .col-lg-#{$i} {
         $width: 100% / 12 * $i;
@@ -82,7 +85,6 @@ a {
         max-width: $width;
     }
 }
-
 @for $i from 1 through 12 {
     .col-xl-#{$i} {
         $width: 100% / 12 * $i;
@@ -91,7 +93,6 @@ a {
         max-width: $width;
     }
 }
-
 @mixin grid($prefix) {
     @for $i from 1 through 12 {
         .col-#{$prefix}-#{$i} {
@@ -102,7 +103,6 @@ a {
         }
     }
 }
-
 @media(max-width: 767px) {
     @include grid('sm');
 }
@@ -176,10 +176,14 @@ a {
         margin-left: $width;
     }
 }
-
 h3 {
 	font: bold 1em $paragraph-font;
 	color:  $grey4;
+    text-align: left;
+}
+h5 {
+    font: 1em $paragraph-font;
+    padding-left: 2em !important;
 }
 .center {
     display: flex;

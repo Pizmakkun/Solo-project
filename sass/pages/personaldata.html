@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="../../css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
 </head>
-	<body id="links">
+	<body id="personaldata">
 		<ul class="topbar flex-container col-sm-12 col-md-12 col-lg-12 col-xl-12">
 			<li class="topbar_button hamburger" id="hamburger">
 				<svg width="17" height="17" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg></li>
@@ -69,46 +69,46 @@
 					<form class="col-sm-11 col-md-10 col-lg-9 col-xl-6"action="" method="POST">
 							<div class="field">
 								<label>Name</label>
-								<input type="text" name="fname">
+								<input type="text" placeholder="name" name="fname" required>
 							</div>
 							<div class="field">
 								<label>Last Name</label>
-								<input type="text" name="lname">
+								<input type="text" placeholder="last name" name="lname" required>
 							</div>
 							<div class="field">
 								<label>E-mail</label>
-								<input type="email" name="email">
+								<input type="email" placeholder="e-mail" name="email" required>
 							</div>
 							<div class="field">
 								<label>Phone Number</label>
-								<input type="number" name="phone">
+								<input type="number" placeholder="phone" name="phone">
 							</div>
 							<div class="brd-line"></div>
 							<div class="field">
 								<label>Skype</label>
-								<input type="text" name="skype">
+								<input type="text"placeholder="skype" name="skype">
 							</div>
 							<div class="field">
 								<label>ICQ</label>
-								<input type="number" name="icq">
+								<input type="number"placeholder="icq" name="icq">
 							</div>
 							<div class="field">
 								<label>MSN</label>
-								<input type="number" name="msn">
+								<input type="number" placeholder="msn" name="msn">
 							</div>
 							<div class="brd-line"></div>
 							<div class="field">
 								<label>Wallet</label>
-								<input type="text" name="wallet">
+								<input type="text" placeholder="wallet" name="wallet">
 							</div>
 							<div class="brd-line"></div>
 							<div class="field">
-								<label>Password</label>
-								<input type="password" name="password">
+								<label>Password (min. 8 signs)</label>
+								<input type="password" placeholder="password (min. 8 signs)" minlength="8" name="password" id="password" required>
 							</div>
 							<div class="field">
-								<label>Repeat</label>
-								<input type="password" name="repeat">
+								<label>Repeat Password</label>
+								<input type="password" placeholder="repeat password" minlength="8" name="confirmed_password" id="confirmed_password" required>
 							</div>
 							<div class="brd-line"></div>
 							<button class="btn-orange" type="submit">Submit</button>

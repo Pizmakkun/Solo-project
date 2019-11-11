@@ -21,3 +21,17 @@ document.querySelector('main').addEventListener('click', function(){
 function goBack() {
 	window.history.back();
 }
+
+var password = document.getElementById('password');
+var confirmedPassword = document.getElementById('confirmed_password');
+
+function validatePassword(){
+	if (password.value != confirmedPassword.value) {
+		confirmedPassword.setCustomValidity("Passwords Don't Match");
+	}	else {
+			confirmedPassword.setCustomValidity('');
+	}	
+}
+
+password.onchange = validatePassword;
+confirmedPassword.onkeyup = validatePassword;

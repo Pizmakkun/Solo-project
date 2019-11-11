@@ -390,9 +390,18 @@ a {
   display: inline-flex;
 }
 
-.row {
+.column {
+  display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.row {
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .row::before,
@@ -1394,6 +1403,12 @@ a {
 h3 {
   font: bold 1em "Open Sans", Helvetica, Arial;
   color: #979797;
+  text-align: left;
+}
+
+h5 {
+  font: 1em "Open Sans", Helvetica, Arial;
+  padding-left: 2em !important;
 }
 
 .center {
@@ -1480,6 +1495,7 @@ h3 {
   box-shadow: 0 0 8px 1px #E3E3E3;
   overflow: hidden;
   padding: 0 0 1em 0;
+  color: #979797;
 }
 
 .paragraph header {
@@ -1493,7 +1509,7 @@ h3 {
 
 .brd-line {
   width: 100%;
-  margin: 2em 0;
+  margin: 1em 0 0 0;
   border-bottom: 1px solid #E3E3E3;
 }
 
@@ -1512,41 +1528,8 @@ h3 {
   display: block;
 }
 
-label {
-  padding: 0.5em;
-  text-align: left;
-  margin: auto 0;
-}
-
-input[type="text"], input[type="email"], input[type="number"], input[type="password"] {
-  padding: 5px 10px;
-  color: inherit;
-  outline: #BABABA;
-  overflow: hidden;
-  width: 70%;
-  max-width: 100%;
-  margin: .5em;
-}
-
-input[type="number"] {
-  -moz-appearance: textfield;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-
-.field {
-  display: flex;
-  justify-content: space-between;
-  color: #979797;
-}
-
-@media screen and (max-width: 344px) {
-  .field {
-    display: block;
-  }
+#red {
+  color: red;
 }
 
 .topbar_button {
@@ -1665,6 +1648,11 @@ button.btn-charts:active {
   background-color: #F5F5F2;
 }
 
+#pixelbtn {
+  float: right;
+  margin: 2em 3em;
+}
+
 .link-field {
   float: left;
   transition: 0.3s;
@@ -1733,6 +1721,60 @@ button.btn-charts:active {
 
 .link-icons {
   text-align: right !important;
+}
+
+label {
+  padding: 0.5em;
+  text-align: left;
+  margin: auto 1em;
+  font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="number"], input[type="password"] {
+  border-radius: 4px;
+  border: 1px solid #E3E3E3;
+  padding: 5px 10px;
+  margin: .5em;
+  color: inherit;
+  outline: #BABABA;
+  overflow: hidden;
+  width: 80%;
+  max-width: 320px;
+  transition: .5s;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus {
+  border: 1px solid #979797;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.field {
+  display: flex;
+  justify-content: space-between;
+  color: #979797;
+}
+
+@media screen and (max-width: 344px) {
+  .field {
+    display: block;
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+::placeholder {
+  text-align: left;
+  color: #E3E3E3;
 }
 
 .show {
