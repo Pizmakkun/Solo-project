@@ -1,5 +1,7 @@
 'use strict'
 
+// side menu toggling
+
 function toggleMenu() {
 document.querySelector('.sidebar').classList.toggle('show');
 document.querySelector('.dim').classList.toggle('dimmed');
@@ -22,6 +24,8 @@ function goBack() {
 	window.history.back();
 }
 
+// password validation
+
 var password = document.getElementById('password');
 var confirmedPassword = document.getElementById('confirmed_password');
 
@@ -35,3 +39,13 @@ function validatePassword(){
 
 password.onchange = validatePassword;
 confirmedPassword.onkeyup = validatePassword;
+
+// forms validation (requires adding "novalidate" attribute to <form> tag")
+
+function validateForm() {
+	var validation = document.forms["myForm"]["signup"].value;
+	if (validation == "") {
+		alert("Please fill \"Signup\" field");
+		return false;
+	}
+}

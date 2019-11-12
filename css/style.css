@@ -1777,6 +1777,40 @@ textarea {
   color: #E3E3E3;
 }
 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #ffffff;
+  border: 1px solid #979797;
+  padding: 5px 30px 5px 10px !important;
+  font-size: 0.9em;
+  border-radius: 0;
+  background-image: url(https://image.flaticon.com/icons/png/128/118/118738.png);
+  background-size: 15px auto;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 5px) 50%;
+}
+
+label input[type="checkbox"] {
+  position: absolute;
+  margin: 0;
+  width: 14px;
+  height: 14px;
+  opacity: 0;
+}
+
+label input[type="checkbox"] + .icon {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #979797;
+}
+
+label input[type="checkbox"]:checked + .icon {
+  background-color: #979797;
+}
+
 .show {
   transform: translate3d(0, 0, 0);
   transition: .6s;

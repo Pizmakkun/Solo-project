@@ -65,7 +65,7 @@
 				<header>
 					New postback
 				</header>
-				<form action="" method="POST">
+				<form name="myForm" action="" method="POST" novalidate onsubmit="return validateForm()">
 					<h5 class="row col-sm-12">You can insert some parameters in this postback</h5>
 					<div class="brd-line"></div>
 					<div class="row flex-container col-sm-12">
@@ -121,10 +121,26 @@
 						<div class="col-sm-12 col-md-6">
 							<h3><span id="red">NOT</span> send statuses</h3>
 							<div class="column col-sm-12">
-								<label><input type="checkbox" name="notsend" value="checkNumber"> checkNumber</label>
-								<label><input type="checkbox" name="notsend" value="noAnswer"> noAnswer</label>
-								<label><input type="checkbox" name="notsend" value="noCall"> noCall</label>
-								<label><input type="checkbox" name="notsend" value="callAgain"> callAgain</label>
+								<label>
+									<input type="checkbox" name="notsend" value="checkNumber">
+									<div class="icon"></div>
+									 checkNumber
+								</label>
+								<label>
+									<input type="checkbox" name="notsend" value="noAnswer">
+									<div class="icon"></div>
+									 noAnswer
+								</label>
+								<label>
+									<input type="checkbox" name="notsend" value="noCall">
+									<div class="icon"></div>
+									 noCall
+									</label>
+								<label>
+									<input type="checkbox" name="notsend" value="callAgain">
+									<div class="icon"></div>
+									 callAgain
+								</label>
 							</div>
 						</div>
 						<div class="col-sm-12 col-md-6">
