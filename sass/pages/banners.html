@@ -152,11 +152,22 @@
 							</li>
 						</ul>
 					</div>
-				<button class="btn-orange">
+				<button class="btn-orange" onclick="openModal('#modal')">
 						+ add new
 				</button>	
 			</div>
 		</main>
+		<!-- modals -->
+		<div class="overlay" id="overlay">
+			<div class="modal" id="modal">
+				<div class="btn-close js--close-modal">
+				</div>
+				<h3>Modal</h3>
+				<p>Lorem ipsum dolor sit amet...</p>
+				<button class="js--close-modal">Okay</button>
+			</div>
+		</div>
+		<!-- js -->
 		<script type="text/javascript" src="../../js/script.js">
 		</script>
 	</body>

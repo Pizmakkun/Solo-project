@@ -20,6 +20,16 @@ document.querySelector('main').addEventListener('click', function(){
 	removeMenu();
 });
 
+// close by esc
+
+document.addEventListener('keyup', function(e) {
+	if (e.keyCode === 27) {
+		removeMenu()
+	}
+})
+
+// back
+
 function goBack() {
 	window.history.back();
 }
@@ -49,3 +59,50 @@ function validateForm() {
 		return false;
 	}
 }
+
+// closing modals;
+
+// close by removing .show; create function and attach it to buttons with proper class;
+
+function closeModal() {
+	document.getElementById('overlay').classList.remove('show')
+}
+// close by click on button
+document.querySelectorAll('#overlay .js--close-modal').forEach(function(btn){
+	btn.addEventListener('click', function(e){
+		e.preventDefault()
+		closeModal()
+	})
+})
+// close by click outside modal
+document.querySelector('#overlay').addEventListener('click', function(e) {
+	if (e.target === this) {
+		closeModal()
+	}
+})
+// close by click esc
+document.addEventListener('keyup', function(e) {
+	if (e.keyCode === 27) {
+		closeModal()
+	}
+})
+
+//open modal
+
+//first close all modals then open chosen one
+
+function openModal(modal) {
+	document.querySelectorAll('#overlay > *').forEach(function(modal) {
+		modal.classList.remove('show')
+	}) // it closed all modals
+	document.querySelector('#overlay').classList.add('show')
+	document.querySelector(modal).classList.add('show')
+}
+
+
+
+
+
+
+
+
