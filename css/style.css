@@ -1839,7 +1839,7 @@ label input[type="checkbox"]:checked + .icon {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 9999;
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -1863,7 +1863,8 @@ label input[type="checkbox"]:checked + .icon {
   margin: auto;
   background-color: #ffffff;
   position: relative;
-  padding: 30px;
+  top: -30%;
+  padding: 10px;
   display: none;
 }
 
@@ -1876,6 +1877,7 @@ label input[type="checkbox"]:checked + .icon {
   top: 0;
   right: 0;
   padding: 5px 10px;
+  border: 1px solid red;
 }
 
 /**

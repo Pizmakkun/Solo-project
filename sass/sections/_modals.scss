@@ -2,7 +2,7 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 999;
+	z-index: 9999;
 	height: 100%;
 	width: 100%;
 	background-color: rgba(0,0,0,0.5);
@@ -24,7 +24,8 @@
 	margin: auto; // musi mieć wartość auto , aby go nie obcinało, jeśli ekran byłby za niski na jego zawartość
 	background-color: #ffffff;
 	position: relative;
-	padding: 30px;
+	top: -30%;
+	padding: 10px;
 	display: none;
 }
 .modal.show {
@@ -35,4 +36,5 @@
 	top: 0;
 	right: 0;
 	padding: 5px 10px;
+	border: 1px solid red;
 }
